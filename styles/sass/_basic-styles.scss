@@ -1,0 +1,44 @@
+body {
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: $dark;
+}
+
+header {
+    min-height: 20vh;
+}
+
+main {
+    min-height: 73vh;
+}
+
+footer {
+    background: $dark;
+    color: $light;
+    min-height: 7vh;
+    text-align: center;
+    position: relative;
+    a {
+        color: $light;
+        text-decoration: none;
+        font-family: $para;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+h2 {
+    color: $accent;
+    margin: 0;
+    font-family: $titles;
+}
+
+p{
+    font-family: $para;
+    margin: 5px 0;
+}

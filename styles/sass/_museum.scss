@@ -1,0 +1,59 @@
+.museum {
+    padding-top: 150px;
+}
+
+.museum-flex1 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap-reverse;
+    padding-top: 150px;
+}
+
+.art-info {
+    margin: 0 15px;
+    width: 30%;
+    min-width: 300px;
+    z-index: 10;
+}
+
+.ex-title-cont,
+.art-text-cont {
+    padding: 10px;
+    background-color: $light;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.img-cont2 {
+    z-index: 10;
+    width: 45%;
+    max-height: 100%;
+    min-width: 300px;
+    img {
+        border: 25px $secAccent ridge;
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0 auto;
+    }
+}
+
+button.next,
+button.back {
+    z-index: 30;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: $light;
+    font-family: $para;
+    position: absolute;
+    right: 10px;
+}
+
+button.next {
+    bottom: 45%;
+}
+
+button.back {
+    bottom: 38%;
+}

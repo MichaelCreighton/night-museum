@@ -1,0 +1,43 @@
+.blurb-cont {
+    border: $dark 1px solid;
+    width: 50%;
+    margin-left: 5%;
+    padding: 5px;
+    background: $light;
+    border-radius: 5px;
+}
+
+.img-cont1 {
+    width: 20%;
+    margin: 0 auto;
+
+}
+.mus-title-cont {
+    text-align: center;
+}
+
+.dont-show {
+    display: none;
+}
+
+select {
+    width: 60%;
+    font-family: $para;
+    background-color: $dark;
+    border: none;
+    border-radius: 7px;
+    color: $light;
+    padding: 5px;
+    option {
+        font-family: $para;
+    }
+}
+
+.choose {
+    background-color: $dark;
+    border: none;
+    border-radius: 7px;
+    color: $light;
+    padding: 6px;
+    font-family: $para;
+}

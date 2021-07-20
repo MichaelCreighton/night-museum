@@ -1,0 +1,24 @@
+.vase-cont {
+    position: absolute;
+    bottom: 105%;
+    left: 5%;
+    width: 100px;
+    transition: all 2s cubic-bezier(0.4, 1, 10, 10);
+    
+}
+
+// vase kick simulation with a one sec delay and
+// only working on evert second mouseover to add
+// some confusion and mystery
+.roll {
+    animation: vase-kick 4s; 
+    animation-delay: 1s;
+}
+
+@keyframes vase-kick {
+    50% { @include animateKick (39vw, 0, -25vh, 500deg);}
+    75% { @include animateKick (-300vw);}
+    80% { @include animateKick (-150vw);}
+    100% { @include animateKick (0, 1);}
+}
+

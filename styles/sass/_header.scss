@@ -1,0 +1,67 @@
+h1 {
+    color: $light;
+    text-align: center;
+    font-size: 3rem;
+    padding-left: 10%;
+    padding-top: 50px;
+    margin-right: 25%;
+    font-family: $header;
+    text-shadow: 2px 2px 4px $dark;
+}
+
+.inner-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin: 0 6px 5px 0;
+}
+
+.outter-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.dino-head {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    transform: scale(1);
+    max-width: 45%;
+    transition: transform 1s ;
+    z-index: 20;
+}
+
+
+// this will shake the dino on hover
+.shaker:hover {
+    animation: shake 0.5s;
+    // infinite loop on hover
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { @include animateShake(1px, 1px);}
+    10% { @include animateShake(0px, -4px);}
+    20% { @include animateShake(0px, 0px);}
+    30% { @include animateShake(5px, 4px);}
+    40% { @include animateShake(1px, -1px);}
+    50% { @include animateShake(0px, 4px);}
+    60% { @include animateShake(0px, 1px);}
+    70% { @include animateShake(5px, 1px);}
+    80% { @include animateShake(0px, -1px);}
+    90% { @include animateShake(1px, 4px);}
+    100% { @include animateShake(1px, -4px);}
+}
+
+// this grows and moves the dino towards the button 
+// when the user mouses over the next button 
+.bite-me {
+    transform: translate(-35px, 50px)  scale(1.2) ; 
+}
+
+
+
+
+

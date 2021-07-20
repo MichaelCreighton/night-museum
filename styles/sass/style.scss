@@ -1,0 +1,27 @@
+// variables
+$light: #d1cac2;
+$dark: #130d00;
+$accent: #B51A38;
+$secAccent: #753C19;
+
+$header: 'Luckiest Guy', cursive;;
+$titles: 'Lora', serif;
+$para: 'Lato', sans-serif;
+
+// mixins
+@mixin animateShake ($leftPx, $rightPx) {
+    transform: translate($leftPx, $rightPx);
+}
+
+@mixin animateKick ($transX, $scale:0, $transY:0vh, $rotate:0deg) {
+    transform: translateX($transX) translateY($transY) rotate($rotate) scale($scale);
+}
+
+// partials
+@import "normalize";
+@import "basic-styles";
+@import "header";
+@import "blurb";
+@import "museum";
+@import "art";
+@import "media";
